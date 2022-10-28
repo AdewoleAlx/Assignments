@@ -1,0 +1,123 @@
+/* html, body{
+    height: 100%;
+    width: 100%;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(.//images\ \(1\).jpeg);
+    /*background-color: blanchedalmond;*/
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    color: #ff7200;
+    /*background-color: blueviolet;*/
+}
+
+nav{
+    /*background-color: brown;*/
+    padding: 20px;
+    word-spacing: 30px;
+    margin-top: 5px;
+}
+
+nav a{
+    color: aquamarine;
+    text-decoration: none;
+    font-family: 'Times New Roman';
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.content{
+    /*background-color: blue;*/
+    /*padding: 230px;*/
+    /*display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 500px auto;*/
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.image {
+    /*background-color: greenyellow;*/
+    border-radius: 20px;
+    margin-left: 10px;
+    flex: 30%;
+}
+
+img{
+    border-radius: 40px;
+}
+
+.image p{
+    text-align: center;
+    color: #cccccc;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 300px;
+    word-spacing: 10px;
+    padding: 5px 10px 0;
+}
+
+.info {
+    /*background-color: green;*/
+    /*padding-left: 350px;*/
+    /*padding: 0 0 100px 100px;*/
+    flex: 60%;
+}
+
+.info p{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Times New Roman';
+    font-size: 14px;
+    font-weight: bold;
+    word-spacing: 10px;
+    padding: 5px 10px 20px;
+    /* margin-left: 300px; */
+}
+
+footer{
+    background-color: #4a4a4a;
+    padding: 50px 0 70px;
+    margin: 20px 0  18px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+            flex-direction: column;
+            background-color: orangered;
+            
+
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

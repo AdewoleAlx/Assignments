@@ -1,27 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="page.css" type="text/css" />
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+ <style>
+   html, body {
+  height: 100%;
+  width: 100%;
+}
+   
+      body {
+        background-color: orangered;
+      }
+
+      .log {
+        background-color: #cacaca;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+        border: 50px gainsboro solid;
+      }
+
+      h3 {
+        text-align: center;
+        padding: 15px;
+        margin: 0;
+        color: green;
+      }
+
+      .mail,
+      .pass,
+      .sub {
+        padding: 10px 2px 10px;
+        text-align: center;
+      }
+
+      label {
+        font-family: arial solid;
+        font-weight: bold;
+        color: #444;
+      }
+
+      input[type="email"] {
+        padding: 10px 15px 10px 10px;
+        border: none;
+        border-radius: 15px;
+      }
+
+      input[type="password"] {
+        padding: 10px 15px 10px 10px;
+        border: none;
+        border-radius: 15px;
+      }
+
+      input[type="submit"] {
+        padding: 10px 40px;
+        border: none;
+        border-radius: 14px;
+        cursor: pointer;
+        background-color: rgb(172, 75, 41);
+        font-weight: bold;
+        color: bisque;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #03032b;
+        opacity: 0.6;
+        transition: 1s;
+      }
+    </style>
   </head>
   <body>
     <div>
       <form action="index2.html">
-        <div class="write">
-          <h3>REGISTRATION</h3>
-          <div class="fname">
-            <label for="fname">Firstname:</label><br />
-            <input type="text" name="firstname" placeholder="Firsname" />
-          </div>
-          <div class="lname">
-            <label for="lname">Lastname:</label><br />
-            <input type="text" name="lastname" placeholder="Lastname" />
+        <div class="log">
+          <h3>LOG IN</h3>
+          <div class="mail">
+            <label for="email">EMAIL ADDRESS:</label><br />
+            <input type="email" name="email" placeholder="@gmail.com" />
           </div>
           <div class="pass">
-            <label for="pass">password:</label><br />
+            <label for="pass">PASSWORD:</label><br />
             <input
               type="password"
               name="password"
@@ -29,37 +93,8 @@
               maxlength="10"
             />
           </div>
-          <div class="mail">
-            <label for="email">Email Address:</label><br />
-            <input type="email" name="email" placeholder="@gmail.com" />
-          </div>
-          <div class="tel">
-            <label for="tel">Telephone Number:</label><br />
-            <input
-              type="tel"
-              name="phone number"
-              placeholder="Your Phone Number"
-            />
-          </div>
-          <div class="date">
-            <label for="date">Date Of Birth:</label><br />
-            <input type="date" name="date of birth" />
-          </div>
-          <div class="color">
-            <label for="fcolor">Favorite Color:</label><br />
-            <input type="color" name="favorite color" />
-          </div>
-          <div class="gen">
-            <label for="gender">Gender:</label><br />
-            Male<input type="radio" name="gender" /> Female<input
-              type="radio"
-              name="gender"
-            />
-          </div>
           <div class="sub">
-            <form action="">
-              <input type="submit" value="SUBMIT" />
-            </form>
+            <input type="submit" value="SUBMIT" />
           </div>
         </div>
       </form>

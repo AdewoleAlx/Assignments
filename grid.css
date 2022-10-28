@@ -1,0 +1,96 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 130px 130px 140px;
+    grid-template-rows: 130px 130px;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-top: 150px;
+    width: 692;
+    gap: 5px;
+}
+
+.one{
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 140px;
+    margin-top: 50px;
+}
+
+.two{
+    background-color: brown;
+    height: 140px;
+    margin-top: 50px;
+}
+
+.three{
+    background-color: aqua;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 190px;
+    margin-top: 60px;
+}
+
+.four{
+    background-color: blue;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-top: 60px;
+}
+
+.five {
+    background-color: yellow;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding: 30px;
+
+}
+
+ .five, .four{
+    /*margin: 0;*/
+    margin-left: 60px;
+}
+
+/*.one{
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.two{
+    background-color: brown;
+}
+
+.three{
+    background-color: aqua;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 190px;
+}
+
+.four{
+    background-color: blue;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.five {
+    background-color: yellow;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding: 50px;
+}
+
+
+
+ .five, .four{
+    margin: 0;
+    margin-left: 60px;
+}*/
